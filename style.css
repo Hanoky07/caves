@@ -1,0 +1,97 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+body {
+    min-height: 10vh;
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    margin-top: 9500px;
+    padding: 100px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+main .mtxt {
+    width: 50%;
+}
+
+main .mtxt h1 {
+    display: block;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+    color: peru;
+    padding: 30px 50px;
+    border-radius: 10px;
+    font-size: 3rem;
+}
+
+main .mtxt p {
+    color: beige;
+    font-size: 1rem;
+    width: 100%;
+    margin: 45px 0 80px;
+}
+
+main .mtxt button {
+    background-color: peru;
+    color: beige;
+    border-radius: 50px;
+    padding: 8px 32px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;  
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+main .mtxt button:after {
+    display: block;
+    content: '';
+    width: 0%;
+    background-color: white;
+    transition: 0.5s;
+    height: 3px;
+}
+
+main .mtxt button:hover::after {
+    width: 100%;
+}
+
+main .mtxt button:hover {
+    letter-spacing: 0.25em;
+}
+
+@media (max-width: 850px) {
+    main{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main .mtxt{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    main .mtxt h1 {
+        font-size: 2rem;
+    }
+}
