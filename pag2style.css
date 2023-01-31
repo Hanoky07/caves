@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
-    background-image: url(img/background.png);
+    background-image: url(background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,9 +28,6 @@ body {
 }
 
 .header {
-    background-image: url(img/baleia.svg);
-    background-position: center;
-    background-size: 100%;
     padding: 30px 40px;
 }
 
@@ -68,7 +66,7 @@ body {
 }
 
 .form button {
-    background-color: #141414;
+    background-color: #0b0909cf;
     border-radius: 25px;
     color: beige;
     padding: 15px;
@@ -83,7 +81,7 @@ body {
 }
 
 .form button:hover {
-    background-image: url(img/avatar.png);
+    background-image: url(avatar.png);
     background-size: 100%;
     background-position: center;
     color: beige;
